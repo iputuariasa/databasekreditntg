@@ -39,7 +39,12 @@
           <a href="" class="bg-red-700 w-1/2 ms-2 me-4 p-1 rounded-md text-white text-center">Keluar</a>
         </div>
       </div>
+
+      <div class="px-6 pt-20 lg:px-8">
+        <h3>Portofolio</h3>
+      </div>
     </div>
+
   
     <div class="relative isolate px-6 pt-14 lg:px-8">
       <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">

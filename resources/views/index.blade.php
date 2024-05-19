@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @vite('resources/css/app.css')
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/525a9b21ee.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
   <div class="bg-white">
     <div class="relative" x-data="{ open: false }">
-      <header class="fixed  inset-x-0 top-0 z-50">
-        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <header class="fixed inset-x-0 top-0 z-50">
+        <nav class="flex items-center justify-between px-6 py-4 lg:px-8" aria-label="Global">
           <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">
               <img class="h-8 w-auto" src="img/logo.png" alt="Logo Nusamba Tegallalang">
@@ -29,7 +30,7 @@
       </header>
   
       {{-- Profile Card --}}
-      <div class="fixed top-16  right-7 bg-gradient-to-r from-sky-300 to-slate-50 shadow-md w-64 h-auto z-10 rounded-xl" x-show="open" @click.outside="open = false" x-transition.duration.500ms>
+      <div class="fixed top-16 z-50 right-7 bg-gradient-to-r from-sky-300 to-slate-50 shadow-md w-64 h-auto rounded-xl" x-show="open" @click.outside="open = false" x-transition.duration.500ms>
         <div class="w-full h-24 flex justify-center items-center mt-4 flex-col">
           <img src="img/iconuser.png" alt="" class="w-fit">
           <span class="font-semibold">Arik Arnawa</span>
@@ -41,9 +42,26 @@
       </div>
 
       <div class="px-6 pt-20 lg:px-8">
-        <h3>Portofolio</h3>
+        <h1 class="font-bold">Portofolio Balance</h1>
+        <h1 class="font-bold text-2xl">Rp5.000.000</h1>
       </div>
     </div>
+
+    {{-- Card --}}
+    <div class="relative isolate px-6 mt-5 lg:px-8">
+      <div class="relative flex justify-center items-center">
+        <div class="ball -me-5 z-10"></div>
+        <div class="ball -ms-5"></div>
+
+
+        {{-- <div class="w-40 h-40 rounded-full bg-blue-500">
+          <span>Pengajuan</span>
+        </div>
+        <div class="w-40 h-40 rounded-full bg-blue-500">
+          <span>Point</span>
+        </div> --}}
+      </div>
+    </div> 
 
   
     <div class="relative isolate px-6 pt-14 lg:px-8">
@@ -70,5 +88,12 @@
       </div>
     </div>
   </div>  
+  <script>
+    const navbar = document.querySelector("header");
+  
+    window.addEventListener("scroll", function(){
+        navbar.classList.toggle("bg-white", window.scrollY > 0)
+    });
+  </script>
 </body>
 </html>

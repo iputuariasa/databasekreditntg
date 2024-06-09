@@ -7,8 +7,16 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/525a9b21ee.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #A0DEFF 0%, #A0DEFF 100%);
+      min-height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-r from-blue-50 to-sky-50">
+<body>
   <div class="">
     <div class="relative" x-data="{ open: false }">
       <header class="fixed inset-x-0 top-0 z-50">
@@ -73,7 +81,7 @@
 
     {{-- Menu --}}
     <div class="relative isolate px-6 mt-10 lg:px-8">
-      <div class="bg-gradient-to-r from-green-200 to-blue-300 p-3 rounded-2xl border-solid border-2 border-slate-200 flex justify-around">
+      <div class="bg-white p-3 rounded-2xl border-solid border-2 border-slate-200 flex justify-around">
         <a href="" class="w-16 h-16 flex justify-center items-center">
           <div class="flex flex-col justify-center items-center">
             <i class="fa-solid fa-circle-plus text-3xl text-slate-900"></i>

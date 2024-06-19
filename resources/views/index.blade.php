@@ -81,34 +81,69 @@
 
     {{-- Menu --}}
     <div class="relative isolate px-6 mt-10 lg:px-8">
-      <div class="bg-white p-3 rounded-2xl border-solid border-2 border-slate-200 flex justify-around">
-        <a href="" class="w-16 h-16 flex justify-center items-center">
-          <div class="flex flex-col justify-center items-center">
-            <i class="fa-solid fa-circle-plus text-3xl text-slate-900"></i>
-            <span class="text-sm text-slate-600">Tambah</span>
+      <div class="bg-white p-3 rounded-2xl border-solid border-2 border-slate-200">
+        <div class="flex justify-between">
+          <span class="font-semibold text-lg">Menu</span>
+          <div>
+            <span class="font-semibold text-lg">16-Jun-2024</span>
           </div>
-        </a>
-        <a href="" class="w-16 h-16 flex justify-center items-center">
-          <div class="flex flex-col justify-center items-center">
-            <i class="fa-solid fa-paper-plane text-3xl text-slate-900"></i>
-            <span class="text-sm text-slate-600">Ajukan</span>
-          </div>
-        </a>
-        <a href="" class="w-16 h-16 flex justify-center items-center">
-          <div class="flex flex-col justify-center items-center">
-            <i class="fa-solid fa-eye text-3xl text-slate-900"></i>
-            <span class="text-sm text-slate-600">Data</span>
-          </div>
-        </a>
-        <a href="" class="w-16 h-16 flex justify-center items-center">
-          <div class="flex flex-col justify-center items-center">
-            <i class="fa-solid fa-street-view text-3xl text-slate-900"></i>
-            <span class="text-sm text-slate-600">Kunjungan</span>
-          </div>
-        </a>
+        </div>
+        <div style="height: 0.5px" class="w-full bg-slate-300 mt-1 mb-3"></div>
+        <div class="flex justify-around">
+          <a href="" class="w-16 h-16 flex justify-center items-center">
+            <div class="flex flex-col justify-center items-center">
+              <i class="fa-solid fa-circle-plus text-3xl text-slate-900"></i>
+              <span class="text-sm text-slate-600">Tambah</span>
+            </div>
+          </a>
+          <a href="" class="w-16 h-16 flex justify-center items-center">
+            <div class="flex flex-col justify-center items-center">
+              <i class="fa-solid fa-paper-plane text-3xl text-slate-900"></i>
+              <span class="text-sm text-slate-600">Ajukan</span>
+            </div>
+          </a>
+          <a href="" class="w-16 h-16 flex justify-center items-center">
+            <div class="flex flex-col justify-center items-center">
+              <i class="fa-solid fa-eye text-3xl text-slate-900"></i>
+              <span class="text-sm text-slate-600">Data</span>
+            </div>
+          </a>
+          <a href="" class="w-16 h-16 flex justify-center items-center">
+            <div class="flex flex-col justify-center items-center">
+              <i class="fa-solid fa-street-view text-3xl text-slate-900"></i>
+              <span class="text-sm text-slate-600">Kunjungan</span>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
 
+    {{-- Tampilan Laporan --}}
+    <div class="relative isolate px-6 mt-3 lg:px-8">
+      <div class="bg-white p-3 rounded-2xl border-solid border-2 border-slate-200">
+        <div class="flex justify-between">
+          <span class="font-semibold text-lg">Kunjungan</span>
+          <div>
+            <button class="px-3 rounded-md ring-2 ring-blue-500 hover:bg-blue-500 hover:text-white">
+              <span>Bagikan</span>
+              <i class="fa-solid fa-share"></i>
+            </button>
+          </div>
+        </div>
+        <div style="height: 0.5px" class="w-full bg-slate-300 mt-1 mb-3"></div>
+        <div>
+          <div class="flex flex-col">
+            <span>I Nyoman Dangin</span>
+            <span style="font-size: 12px" class="text-slate-400">3 jam yang lalu</span>
+          </div>
+          <div>
+            <button class="px-3 rounded-md ring-2 ring-slate-400 hover:bg-blue-500 hover:text-white">
+              <span>Lihat</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   
     <div class="relative isolate px-6 pt-7 lg:px-8">
       <div class="mx-auto max-w-2xl">
